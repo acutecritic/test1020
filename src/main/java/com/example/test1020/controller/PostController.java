@@ -19,6 +19,7 @@ public class PostController {
 
     @PostMapping
     public CommonResDto<?> create(@RequestBody PostReqDto dto){
+
         postService.create(dto);
 
         return new CommonResDto<>(true,null);
